@@ -257,11 +257,13 @@ GROUP BY category;
 **Objective:** Categorize content as 'Bad' if it contains 'kill' or 'violence' and 'Good' otherwise. Count the number of items in each category.
 
 ## 16.Find the top 5 most recent additions to Netflix.
+```sql
 SELECT title, type, date_added
 FROM netflix
 ORDER BY date_added DESC
 LIMIT 5;
-
+```
+**Objective:**  identified the top 5 most recent additions to Netflix based on the date_added column. 
 ## 17. Count how many shows were added each year.
 SELECT SUBSTRING(date_added, -4) AS year_added, COUNT(*) AS count
 FROM netflix
