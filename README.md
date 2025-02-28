@@ -264,29 +264,40 @@ ORDER BY date_added DESC
 LIMIT 5;
 ```
 **Objective:**  identified the top 5 most recent additions to Netflix based on the date_added column. 
+
 ## 17. Count how many shows were added each year.
+```sql
 SELECT SUBSTRING(date_added, -4) AS year_added, COUNT(*) AS count
 FROM netflix
 WHERE date_added IS NOT NULL
 GROUP BY year_added
 ORDER BY year_added DESC;
+```
+**Objective:** Determined the number of shows added to Netflix each year by extracting the year from the date_added column and counting the number of entries per year. 
 
 ## 18.Get a list of TV Shows that belong to the "Drama" genre
+```sql
 SELECT title, country, release_year
 FROM netflix
 WHERE type = 'TV Show' AND listed_in LIKE '%Drama%';
+```
+**Objective:**  Retrieved a list of TV Shows that belong to the "Drama" genre from the Netflix catalog.
 
 ## 19. Find all movies directed by "Steven Spielberg".
+```sql
 SELECT title, release_year, country
 FROM netflix
 WHERE type = 'Movie' AND director = 'Steven Spielberg';
+```
+**Objective:** Retrieve all movies directed by Steven Spielberg from the Netflix.
 
 ## 20.Find all TV Shows with a "TV-MA" rating.
+```sql
 SELECT title, release_year, listed_in
 FROM netflix
 WHERE type = 'TV Show' AND rating = 'TV-MA';
-
-
+```
+**Objective:**  Retrieved all TV Shows with a "TV-MA" (Mature Audience) rating from the Netflix.
 
 ## Findings and Conclusion
 
