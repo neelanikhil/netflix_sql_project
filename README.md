@@ -312,4 +312,4 @@ This analysis provides a comprehensive view of Netflix's content and can help in
 
 ## NIKHIL NEELA
 
-This project is part of my portfolio, highlighting my SQL skills and demonstrating my ability to analyze and work with data—essential for data analyst roles.
+This project is part of my portfolio, highlighting my SQL skills and demonstrating my ability to analyze and work with data-essential for data analyst roles.
